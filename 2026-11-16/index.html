@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每週爆谷評價 · 2026-11-16 當週（Asia/Hong_Kong；資料錨點約 11/09–11/16；漫畫用 Billboard JAPAN Hot Manga 2026/11/12 公開榜，集計 11/02–11/08；遊戲用 Quest Board 11/14–11/16 朝集計，最新為 11/16 07:30 JST＝06:30 HKT；美劇平台日榜為 11/08–11/14）</title>
+<style>
+  :root {
+    --bg: #fff;
+    --ink: #000;
+    --muted: #555;
+    --line: #000;
+    --soft: #f2f2f2;
+    --max: 1240px;
+    --gutter: 16px;
+    --body: 15px;
+    --entry-gap: calc(var(--body) * 4);
+    /* Shared tracks: lead text cols == pair cards underneath */
+    --pair-cols: 1fr 1fr;
+    --pair-col-gap: var(--gutter);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.5;
+    font-size: var(--body);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--ink); text-underline-offset: 2px; }
+  a:hover { opacity: 0.6; }
+
+  .masthead {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 36px 20px 0;
+  }
+  .wordmark {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+  }
+  .period {
+    margin: 10px 0 18px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  hr.rule {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 0;
+  }
+  hr.section-rule {
+    border: 0;
+    border-top: 4px solid #000;
+    margin: var(--entry-gap) 0 8px;
+  }
+
+  nav.topline {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  nav.topline .inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  nav.topline a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 18px 20px 0;
+  }
+
+  .sec-label {
+    margin: 14px 0 10px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .grid {
+    display: grid;
+    row-gap: calc(var(--entry-gap) / 2); /* aBlue: only this inter-card margin halved */
+    column-gap: var(--pair-col-gap);
+    align-items: start;
+  }
+
+  .grid-lead {
+    grid-template-columns: var(--pair-cols);
+    column-gap: var(--pair-col-gap);
+  }
+  .grid-lead .tile:first-child {
+    grid-column: 1 / -1;
+  }
+  .grid-lead .tile:first-child .tile-media {
+    aspect-ratio: 21 / 9;
+    width: 100%;
+  }
+
+  .grid-drama {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: var(--entry-gap);
+    column-gap: var(--gutter);
+  }
+
+  .tile {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--soft); /* unified card: image + body as one */
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .tile-media {
+    position: relative;
+    overflow: hidden;
+    background: var(--soft);
+    border-radius: 0;
+    aspect-ratio: 16 / 10;
+    width: 100%;
+  }
+  .tile-feature .tile-media { aspect-ratio: 16 / 10; }
+
+  .tile-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    transform: scale(1);
+    transition: transform 0.45s ease;
+  }
+  .tile:hover .tile-media img { transform: scale(1.06); }
+  @media (hover: none) {
+    .tile:hover .tile-media img { transform: scale(1); }
+  }
+
+  .cat {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    background: #111;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    padding: 4px 10px;
+    line-height: 1.2;
+    border: 1px solid #111;
+    border-radius: 999px;
+  }
+  .tone-dark .cat {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+  }
+
+  .tile-body {
+    margin-top: 0; /* flush under image — one visual unit */
+    padding: 14px 16px;
+    background: transparent; /* gray comes from .tile */
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+  /* Keep drama/dark cards black — no gray restyle */
+  .tone-dark .tile-body {
+    margin-top: 0;
+    padding: 10px 12px 14px;
+    background: transparent;
+    border-radius: 0;
+  }
+
+  /* Lead: title top-left; figure B staggered copy (NOT balanced newspaper)
+     .tile-body-lead padding now comes from .tile-body gray box */
+  .lead-head {
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  .lead-head .headline {
+    font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  }
+  .lead-copy-b {
+    display: grid;
+    grid-template-columns: var(--pair-cols); /* same tracks as .grid-lead pairs */
+    column-gap: var(--pair-col-gap);         /* same gutter as pair cards */
+    row-gap: 0;
+    align-items: start; /* figure B: both cols start high; left runs longer */
+    width: 100%;
+  }
+  .lead-col {
+    min-width: 0;
+  }
+  .lead-col-2 .sources {
+    margin-top: 10px;
+  }
+
+  .meta-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 4px;
+  }
+  .heat {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    background: #000;
+    padding: 2px 7px;
+    border-radius: 4px;
+  }
+  .heat-b { background: #444; }
+  .heat-c { background: #777; }
+
+  .delta {
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background: #68b050;
+    padding: 2px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .delta-up,
+  .delta-keep,
+  .delta-new { background: #68b050; }
+  .delta-down { background: #2B6CB0; }
+  .tone-dark .delta-up,
+  .tone-dark .delta-keep,
+  .tone-dark .delta-new { background: #68b050; color: #fff; }
+  .tone-dark .delta-down { background: #2B6CB0; color: #fff; }
+
+  .headline {
+    margin: 0 0 2px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    font-size: 1.05rem;
+  }
+
+  .orig {
+    margin: 0 0 6px;
+    color: var(--muted);
+    font-size: 0.76rem;
+  }
+  .why, .blurb {
+    margin: 0 0 8px;
+    white-space: pre-line;
+  }
+  .why { font-size: 0.82rem; }
+  .blurb {
+    font-size: 0.8rem;
+    color: #222;
+    line-height: 1.55;
+  }
+  .sources {
+    margin: 8px 0 0;
+    font-size: 0.68rem;
+    color: var(--muted);
+  }
+  .sources a { color: var(--muted); }
+
+  .tone-dark {
+    background: #111;
+    color: #fff;
+  }
+  .tone-dark .headline,
+  .tone-dark .why,
+  .tone-dark .blurb { color: #fff; }
+  .tone-dark .orig,
+  .tone-dark .sources,
+  .tone-dark .sources a { color: #bbb; }
+  .tone-dark .heat { background: #fff; color: #000; }
+  .tone-dark .heat-b { background: #ccc; }
+
+  .method {
+    margin-top: var(--entry-gap);
+    padding: 16px 18px 18px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+  }
+  .method h2 { margin: 0 0 8px; font-size: 0.95rem; }
+  .method p, .method-p {
+    margin: 0 0 8px;
+    font-size: 0.82rem;
+    color: #333;
+    line-height: 1.55;
+    white-space: pre-line;
+  }
+  .method p:last-child, .method-p:last-child { margin-bottom: 0; }
+
+  .bottom-wrap {
+    margin-top: var(--entry-gap);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .bottom-box {
+    border: 1px solid #111;
+    background: #fff;
+    padding: 14px 16px 16px;
+  }
+  .bottom-h {
+    margin: 0 0 10px;
+    font-size: 1.02rem;
+    letter-spacing: -0.01em;
+  }
+  .bottom-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 16px;
+  }
+  .bottom-item {
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+  }
+  .bottom-head {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+  .bottom-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+  .bottom-intro {
+    margin: 0 0 6px;
+    font-size: 0.78rem;
+    color: #333;
+    line-height: 1.5;
+    white-space: pre-line;
+  }
+  .bottom-intro:last-child { margin-bottom: 0; }
+
+  footer.site {
+    max-width: var(--max);
+    margin: 28px auto 0;
+    padding: 14px 20px 48px;
+    border-top: 1px solid #ddd;
+    color: var(--muted);
+    font-size: 0.76rem;
+  }
+
+  @media (max-width: 900px) {
+    .grid-drama { grid-template-columns: 1fr 1fr; }
+    .bottom-list { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 700px) {
+    .lead-copy-b { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .masthead, nav.topline, .wrap, footer.site { padding-left: 14px; padding-right: 14px; }
+    .grid-lead, .grid-drama {
+      grid-template-columns: 1fr;
+    }
+    .grid-lead .tile:first-child { grid-column: auto; }
+    .grid-lead .tile:first-child .tile-media { aspect-ratio: 16 / 9; }
+    .wordmark { font-size: 1.85rem; }
+  }
+</style>
+</head>
+<body>
+  <header class="masthead">
+    <h1 class="wordmark">每週爆谷評價</h1>
+    <p class="period">2026-11-16 當週（Asia/Hong_Kong；資料錨點約 11/09–11/16；漫畫用 Billboard JAPAN Hot Manga 2026/11/12 公開榜，集計 11/02–11/08；遊戲用 Quest Board 11/14–11/16 朝集計，最新為 11/16 07:30 JST＝06:30 HKT；美劇平台日榜為 11/08–11/14）</p>
+  </header>
+  <hr class="rule">
+  <nav class="topline" aria-label="章節">
+    <div class="inner">
+      <a href="#feat-anime">Anime</a>
+      <a href="#feat-manga">Manga</a>
+      <a href="#feat-games">Games</a>
+      <a href="#feat-dorama">日劇</a>
+      <a href="#feat-us">美劇</a>
+      <a href="#bottom">延伸清單</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <p class="sec-label" id="feat-anime">Featured · Anime</p>
+    <div class="grid grid-lead grid-anime">
+      
+<article class="tile tile-lg tile-lead" id="feat-anime-1">
+  <div class="tile-media">
+    <img src="assets/img-01.jpg" alt="學生會也有洞！" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Anime</span>
+  </div>
+  
+  <div class="tile-body tile-body-lead">
+    <div class="lead-head">
+      <div class="meta-row">
+        <span class="heat heat-a">熱度 A</span>
+      </div>
+      <h3 class="headline">學生會也有洞！</h3>
+      <p class="orig">生徒会にも穴はある！ ／ There&#x27;s a Hole in the Student Council Too!</p>
+    </div>
+    <div class="lead-copy lead-copy-b">
+      <div class="lead-col lead-col-1">
+        <p class="why">台巴哈動畫瘋秋番近七日增量（資料日 2026-11-15）仍榜首，週增 233,721（高過上期約 20.9 萬）；anime-observer 今期覇権仍第 2。Anime Corner 第 6 週票選由第 5 週第 2 微跌至第 3，唔改變台日主證雙甲位置。</p>
+<p class="blurb">想週末開一包又甜又刺嘅校園零食，呢套仍然係台日討論盤最搶鏡嗰包。文青男主為內申點硬闖生徒會，結果撞上悶騷會長、外表清冷實則溫柔嘅會計、嘴賤得嚟好可愛嘅男孩子，同埋細細隻「棄貓」庶務——互相挖角、互揭短處，笑完又有啲心動。</p>
+<p class="blurb">畫面偏可愛到犯規，節奏係短篇連擊，好啱一邊刷手機一邊睇。呢個星期聲量再升一檔，係因為台灣動畫瘋秋番近七日增量（資料日十一月十五日）以二十三萬三千七百二十一穩佔榜首，高過上期約二十點九萬；日本側 anime-observer 今期覇権仍然第二。Anime Corner 第六週票選由第五週第二微跌至第三，並唔改變台日主證嘅雙甲位置，證明一季中段仍然有人追住笑。</p>
+      </div>
+      <div class="lead-col lead-col-2">
+        <p class="blurb">想追「成季都有人轉發」嘅校園戀愛笑料，優先插隊就得；純戰鬥粉或會覺得火力唔夠，但角色化學同氣氛係實貨。由最新一集跟住笑就得，截圖分享都容易引起共鳴，週末清單值得排最前。</p>
+        <p class="sources"><a href="https://anime-research.tw/animategamer/report/2026-fall" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://anime-observer.com/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://animecorner.me/fall-2026-anime-rankings-week-6/" target="_blank" rel="noopener noreferrer">來源 3</a> · <a href="https://nama-anaru.com/" target="_blank" rel="noopener noreferrer">來源 4</a></p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-anime-2">
+  <div class="tile-media">
+    <img src="assets/img-02.jpg" alt="藥師少女的獨語／藥屋的孤獨 第3季" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Anime</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-a">熱度 A</span>
+    </div>
+    <h3 class="headline">藥師少女的獨語／藥屋的孤獨 第3季</h3>
+    <p class="orig">薬屋のひとりごと 第3期 ／ The Apothecary Diaries Season 3</p>
+    <p class="why">anime-observer 2026.11.15 今期覇権仍第 1（分數 1.61）且 11/15 當日觀看仍第 1（對 11/8 同曜日持平）。台灣主戰場偏 Netflix，故仍唔入動畫瘋榜。</p>
+<p class="blurb">想週末浸一浸又靚又燒腦嘅宮廷空氣，日本側而家仍然係呢套喺帶領討論。貓貓離開後宮職務之後返到花街執藥，表面生活慢咗半拍，但日常一點異樣又會把佢拖返謎團中間；同壬氏之間嗰種唔講明都識嘅距離感，仍然係最大黏性。</p>
+<p class="blurb">節奏一案接一案，夾足宮鬥同人物關係，唔使追到頭昏都有「咦原來係咁」嘅爽感。呢個星期仍然好多人傾，係因為 anime-observer 今期覇権以一分六一繼續長期第一，十一月十五日當日觀看亦排第一，同十一月八日同一曜日完全持平。台灣即時戰場偏 Netflix 所以仍然唔入動畫瘋榜，但日本多平台配信先至係佢嘅基本盤，屬於人人都知你喺睇嘅穩定熱度，多過一夜爆紅。</p>
+<p class="blurb">有前兩季底子會更香；純新人都可以當宮廷懸疑零食開餐，人物關係會更有層次。想穩陣、好傾、又唔驚冷場，本週揀佢最冇輸；週末連看兩集，討論通常圍繞角色互動同案件設計打轉。</p>
+<p class="sources"><a href="https://anime-observer.com/" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://anime-observer.com/all" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://kusuriyanohitorigoto.jp/season3/" target="_blank" rel="noopener noreferrer">來源 3</a></p>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-anime-3">
+  <div class="tile-media">
+    <img src="assets/img-03.jpg" alt="被放逐的作弊賦予魔術師享受隨心所欲的第二人生" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Anime</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-b">熱度 B</span>
+    </div>
+    <h3 class="headline">被放逐的作弊賦予魔術師享受隨心所欲的第二人生</h3>
+    <p class="orig">追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。（通稱：チー付与） ／ The Banished Cheat-Granting Magician Enjoys a Carefree Second Life</p>
+    <p class="why">台巴哈秋番週增仍第 2，176,893（高過上期約 13.4 萬）；anime-observer 今期覇権仍第 5，11/15 當日觀看第 3（對 11/8 第 2 微跌 1）。同雙甲門面作仍有距離，故唔升 A。</p>
+<p class="blurb">長到誇張嘅標題本身已經係迷因：被公會踢走嘅強化付與師，竟然可以隨時回收自己畀過嘅點數，然後帶住一班「帶傷」同伴過第二人生。賣點唔單係無雙爽感，仲有黑社會氣味、現代武器同魔法混搭嘅異色世界觀，語氣偏輕快，好啱想睇「被放逐後先至真正開波」嗰類異世界。</p>
+<p class="blurb">呢個星期台灣討論再明顯轉強，係因為動畫瘋秋番週增仍排第二，而且近七日增量去到十七萬六千八百九十三，高過上期約十三點四萬；日本側今期覇権仍然第五，十一月十五日當日觀看由第八日嘅第二微跌至第三，但無「放送」標籤都留喺前段，說明唔係單靠當日首播推上去。未升 A，係因為同巴哈第一、覇権第一嗰兩部雙甲仍然有明顯距離。</p>
+<p class="blurb">開波兩三集試水溫就知合唔合口味；想追異世界熱榜又唔想淨食老牌大作，呢張性價比高，值得列入五動畫名單中段。嫌套路嘅人或會覺得熟悉，但回收強化機制同群像溫度係辨識度，週末當明快冒險飯剛剛好。</p>
+<p class="sources"><a href="https://anime-research.tw/animategamer/report/2026-fall" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://anime-observer.com/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://sh-anime.shochiku.co.jp/chiifuyo-anime/" target="_blank" rel="noopener noreferrer">來源 3</a></p>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-anime-4">
+  <div class="tile-media">
+    <img src="assets/img-04.jpg" alt="凶亂令嬢倪亞·利斯頓／亂世千金倪亞·利斯頓" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Anime</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-b">熱度 B</span>
+    </div>
+    <h3 class="headline">凶亂令嬢倪亞·利斯頓／亂世千金倪亞·利斯頓</h3>
+    <p class="orig">凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの武人の華麗なる無双録 ／ Nia Liston: The Chaotic Daughter</p>
+    <p class="why">台巴哈秋番週增仍第 3（102,544，同上期約 10.3 萬幾乎持平）；anime-observer 今期覇権由上期第 4 升至第 3，11/15 當日觀看仍第 5。</p>
+<p class="blurb">外表係病弱令嬢，內裡係曾經「殺神」嘅武人——呢個反差本身已經夠哂海報。學院生活、才藝推廣同暗處死鬥交錯推進，時而甜到漏、時而拳頭比對白更有說服力，屬於一集入面可以笑完又熱血嗰種拼盤。</p>
+<p class="blurb">呢個星期聲量仍然穩，而且日本側再前了一位，係因為台灣動畫瘋秋番週增仍排第三（十萬二千五百四十四，同上期約十萬三千幾乎持平）；anime-observer 今期覇権由上期第四升至第三，十一月十五日當日觀看仍排第五。兩邊都喺前段班徘徊，屬於日側累積慢慢燒、多過一夜爆紅。週末都有得接進度，比較畫面同角色反差。</p>
+<p class="blurb">鍾意反差萌、又想兼食動作場面嘅朋友，可以把佢當今季異世界無雙代表作來插隊；純搞笑取向可能會覺得節奏有時跳，嚴肅戰鬥粉則會覺得學院段偏萌。總之反差爽感係實貨，開場幾集建立反差之後黏性通常會明顯上升，週末由最新一集感受切換就得。</p>
+<p class="sources"><a href="https://anime-research.tw/animategamer/report/2026-fall" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://anime-observer.com/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://kyoranreijo-pr.com/" target="_blank" rel="noopener noreferrer">來源 3</a></p>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-anime-5">
+  <div class="tile-media">
+    <img src="assets/img-05.jpg" alt="黑色五葉草 第2季" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Anime</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-b">熱度 B</span>
+    </div>
+    <h3 class="headline">黑色五葉草 第2季</h3>
+    <p class="orig">ブラッククローバー 2nd Season ／ Black Clover Season 2</p>
+    <p class="why">台巴哈秋番週增由上期第 4（約 9.5 萬）跌至第 5（88,438）；Anime Corner 第 6 週票選由第 5 週第 4 跌至第 5。anime-observer 今期覇権仍未入前十（綜合第 22），但 11/14 第 7 話被列為「高く評価された」（好評 72%，76 件）。</p>
+<p class="blurb">魔法係一切嘅世界裡，冇魔力嘅少年靠「反魔法」硬闖命運——續作把戰場推到更黑暗、更大規模嘅對抗，團長級角色同王國存亡一齊被推上枱。節奏偏熱血連擊，作畫同戰鬥編排係舊粉回流嘅主因，亦令新觀眾較易被單集高潮帶走，好啱想週末食王道對決嘅人。</p>
+<p class="blurb">呢個星期台票同海外週票各跌一名，但仍然留喺前段，係因為台灣動畫瘋秋番週增由上期第四降至第五（八萬八千四百三十八），Anime Corner 第六週票選亦由第五週第四降至第五；日本側配信覇権名單仍然未見佢入前十，綜合約第二十二。不過觀測室對十一月十四日放送嘅第七話錄到明顯偏高嘅正面反應，好評約百分之七十二，證明單集完成度仍然有人撐場。屬於「台票仍前五、日配信綜合未壓場」嘅前段班。</p>
+<p class="blurb">睇過第一季會更投入人物關係；純新人可以由今季高潮場試水，再決定要唔要補舊作。想週末食王道戰鬥、聽人傾作畫同聲演，呢套辨識度夠高，適合列喺五動畫名單後段。</p>
+<p class="sources"><a href="https://anime-research.tw/animategamer/report/2026-fall" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://anime-observer.com/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://animecorner.me/fall-2026-anime-rankings-week-6/" target="_blank" rel="noopener noreferrer">來源 3</a> · <a href="https://bclover.jp/" target="_blank" rel="noopener noreferrer">來源 4</a></p>
+  </div>
+</article>
+    </div>
+
+    <hr class="section-rule">
+    <p class="sec-label" id="feat-manga">Featured · Manga</p>
+    <div class="grid grid-lead grid-manga">
+      
+<article class="tile tile-lg tile-lead" id="feat-manga-1">
+  <div class="tile-media">
+    <img src="assets/img-06.jpg" alt="SPY×FAMILY／間諜家家酒 第18卷" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Manga</span>
+  </div>
+  
+  <div class="tile-body tile-body-lead">
+    <div class="lead-head">
+      <div class="meta-row">
+        <span class="heat heat-a">熱度 A</span>
+      </div>
+      <h3 class="headline">SPY×FAMILY／間諜家家酒 第18卷</h3>
+      <p class="orig">SPY×FAMILY 18 ／ SPY×FAMILY Vol. 18</p>
+    </div>
+    <div class="lead-copy lead-copy-b">
+      <div class="lead-col lead-col-1">
+        <p class="why">Billboard JAPAN Hot Manga（2026/11/12 公開、集計 11/02–11/08）初登場第 1；新聞稿寫店頭、EC、電子書籍、SNS 全指標第 1。11/4 發售；當週 Top 3 由集英社獨佔。</p>
+<p class="blurb">間諜、殺手同讀心少女組成嘅假家庭，日常同任務界線永遠疊埋一齊——讀起來輕快，但人物之間嘅距離感其實好精密。畫面嘅表情同動作喜劇好易分享，適合想週末食熟悉又安心嘅長青刊，家庭場合都容易有共同話題，辨識度高到連唔追漫畫嘅人都可以插句嘴。</p>
+<p class="blurb">呢個星期成為日本漫畫真正嘅新刊王，係因為十一月四日新刊上市後，Billboard Hot Manga 以店頭、電商、電子書同社交全部第一登上綜合冠軍，係十一月十二日公開榜（集計十一月二日至八日）最完整嘅壓場。集英社仲包辦當週前三，令 JUMP 系新刊討論特別密，書店同電子書通路幾乎同步嘈。</p>
+      </div>
+      <div class="lead-col lead-col-2">
+        <p class="blurb">舊讀者可以當例行補給；未追過嘅人唔使硬啃長線，由日常篇章切入已經有笑位。想感受本週日本漫畫榜最無可爭議嗰本，週末翻呢卷最直白，話題通常圍繞人物互動而唔使劇情劇透。</p>
+        <p class="sources"><a href="https://www.billboard-japan.com/charts/detail?a=manga" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://www.billboard-japan.com/d_news/detail/167387/2" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://www.hanmoto.com/bd/isbn/9784088852683" target="_blank" rel="noopener noreferrer">來源 3</a></p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-manga-2">
+  <div class="tile-media">
+    <img src="assets/img-07.jpg" alt="膽大黨 第26卷" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Manga</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-a">熱度 A</span>
+    </div>
+    <h3 class="headline">膽大黨 第26卷</h3>
+    <p class="orig">ダンダダン 26 ／ Dandadan Vol. 26</p>
+    <p class="why">Hot Manga 初登場第 2；新聞稿：店頭、電子書籍、SNS 第 2（EC 名次未寫，唔補）。</p>
+<p class="blurb">靈異、宇宙同青春衝動攪成一鍋，節奏可以突然由恐怖跳到熱血再跳到臉紅——呢種跳接本身就好易上討論。畫面情報密度高，適合想週末食刺激多過慢熱日常嘅讀者，動畫粉同漫畫粉交叉討論亦令新刊唔易淡，辨識度已經夠高。</p>
+<p class="blurb">呢個星期緊隨間諜家庭之後殺入第二，係因為新刊一出就以店頭、電子書同社交指標第二打入 Billboard Hot Manga 綜合第二；電商分指標新聞稿未寫，呢度唔估。集英社包辦前三嘅週，佢係最能夠同王牌長青刊正面交手嘅動作奇幻，話題由畫風跳接一路開到「今卷邊場最狂」，發售熱度同長期討論盤一齊到場。</p>
+<p class="blurb">睇過動畫會更易入場；完全新人可以由早期卷感受跳接節奏再決定要唔要追到而家。想喺本週榜前段搵火力同笑位都有嘅選擇，呢卷辨識度極高，週末當爆發力零食翻就得，唔使一次追完所有伏線，兩章已經有得同人講。</p>
+<p class="sources"><a href="https://www.billboard-japan.com/charts/detail?a=manga" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://www.billboard-japan.com/d_news/detail/167387/2" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://www.hanmoto.com/bd/isbn/9784088852492" target="_blank" rel="noopener noreferrer">來源 3</a></p>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-manga-3">
+  <div class="tile-media">
+    <img src="assets/img-08.jpg" alt="坂本日常／SAKAMOTO DAYS 第29卷" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Manga</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-a">熱度 A</span>
+    </div>
+    <h3 class="headline">坂本日常／SAKAMOTO DAYS 第29卷</h3>
+    <p class="orig">SAKAMOTO DAYS 29 ／ SAKAMOTO DAYS Vol. 29</p>
+    <p class="why">Hot Manga 初登場第 3；新聞稿：店頭、SNS 第 3。集英社包辦當週 Top 3；文中提到 2027 年 1 月電視動畫第 2 期預定。</p>
+<p class="blurb">退休殺手想過平凡日常，結果舊世界一而再把舖頭同家人捲入風暴——笑位同動作場面可以喺同一頁切換，節奏明快，好啱想週末食「外表痴肥、身手卻誇張」嗰類反差爽感。畫面嘅動作編排清楚，短時間翻兩章都有得同人講，負擔唔重。</p>
+<p class="blurb">呢個星期擠進綜合第三，係因為新刊以店頭同社交指標第三登上 Billboard Hot Manga，同間諜家庭、膽大黨一齊讓集英社包辦當週前三，成為新刊洗榜最完整嘅前段班。新聞稿亦提到二零二七年一月電視動畫第二期預定，令舊粉回流同未補漫畫嘅動畫觀眾有額外理由一齊傾，聲量唔止留喺發售日，會再延伸到明年檔期。</p>
+<p class="blurb">動畫觀眾可以由對應進度附近切入；想食純日常療癒嘅人或會覺得衝突密度偏高。想追本週日本書店同短訊都有人提嘅動作笑料，呢卷剛好補上前三最後一個席位，週末當明快動作飯剛剛好。</p>
+<p class="sources"><a href="https://www.billboard-japan.com/charts/detail?a=manga" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://www.billboard-japan.com/d_news/detail/167387/2" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://www.hanmoto.com/bd/isbn/9784088852355" target="_blank" rel="noopener noreferrer">來源 3</a></p>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-manga-4">
+  <div class="tile-media">
+    <img src="assets/img-09.jpg" alt="魔都精兵的奴隸 第22卷" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Manga</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-b">熱度 B</span>
+    </div>
+    <h3 class="headline">魔都精兵的奴隸 第22卷</h3>
+    <p class="orig">魔都精兵のスレイブ 22 ／ Chained Soldier Vol. 22</p>
+    <p class="why">Hot Manga 初登場第 4；新聞稿只明確寫電子書籍第 3，店頭／EC／SNS 名次未寫。總榜前段但分指標不完整，故 B。</p>
+<p class="blurb">異能戰鬥同危險契約綁埋一齊，節奏偏熱血，人物關係同戰力升級都容易引發討論。畫面情報密，適合想週末換走家庭日常、食更鋒利衝突嘅讀者；動畫同漫畫交叉粉令新刊唔會只留喺書迷圈，話題門檻其實唔高。</p>
+<p class="blurb">呢個星期打入綜合第四，係因為新刊初登場就進入 Billboard Hot Manga 前段，新聞稿明確寫到電子書籍指標排第三；店頭、電商同社交名次今次未見寫出，故唔補估，熱度先標 B。比起包辦前三、分指標齊全嘅三本集英社王牌，佢嘅證據完整度稍遜，但電子通路特別強，說明補進度黨同手機閱讀層都有參與，而唔止店頭一週熱。</p>
+<p class="blurb">鍾意異能戰鬥會很順；對契約設定或者畫面尺度敏感嘅讀者，建議先試閱再決定要唔要追。想喺本週新刊洗榜入面睇非王牌長青刊嘅戰鬥向選擇，呢卷係最接近前段嘅一本，週末當火力補充翻就得，兩章已有話題。</p>
+<p class="sources"><a href="https://www.billboard-japan.com/charts/detail?a=manga" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://www.billboard-japan.com/d_news/detail/167387/2" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://www.hanmoto.com/bd/isbn/9784088852256" target="_blank" rel="noopener noreferrer">來源 3</a></p>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-manga-5">
+  <div class="tile-media">
+    <img src="assets/img-10.jpg" alt="殺手寓言 The third secret 第6卷" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Manga</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-b">熱度 B</span>
+    </div>
+    <h3 class="headline">殺手寓言 The third secret 第6卷</h3>
+    <p class="orig">ザ・ファブル The third secret 6 ／ The Fable: The Third Secret Vol. 6</p>
+    <p class="why">Hot Manga 初登場第 5；新聞稿無分指標。講談社官方書誌：紙／電子 2026-11-06 發售。</p>
+<p class="blurb">殺手寓言系列去到 The third secret 階段，仍然係冷面殺手下嘅黑色幽默同市井生活——表面平靜，對白一利落就知道危險就喺隔籬。節奏唔急，但張力靠人物分寸撐住，適合想週末食成熟向物語、而唔只係少年誌熱血嘅讀者。</p>
+<p class="blurb">呢個星期擠進綜合第五，係因為十一月六日新刊上市後初登場打入 Billboard Hot Manga 前五；新聞稿冇再逐項寫分指標，故唔補估店頭或者電子書名次，熱度先標 B。講談社官方書誌確認紙本同電子同步發售，說明書店同手機閱讀層都可以即日追上，令討論唔使等實體到貨先開始。</p>
+<p class="blurb">睇過先前系列會更享受人物語氣；完全新人可以由早期《ザ・ファブル》感受幽默同殺氣點樣共存，再決定要唔要跟到這一階段。想喺本週新刊洗榜搵非校園、非靈異嘅第五種選擇，呢卷剛好可以插隊，週末慢慢翻兩章已經有氣氛。</p>
+<p class="sources"><a href="https://www.billboard-japan.com/charts/detail?a=manga" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://www.billboard-japan.com/d_news/detail/167387/2" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://www.kodansha.co.jp/comic/products/0000431714" target="_blank" rel="noopener noreferrer">來源 3</a></p>
+  </div>
+</article>
+    </div>
+
+    <hr class="section-rule">
+    <p class="sec-label" id="feat-games">Featured · Games</p>
+    <div class="grid grid-lead grid-triple">
+      
+<article class="tile tile-lg tile-lead" id="feat-games-1">
+  <div class="tile-media">
+    <img src="assets/img-11.jpg" alt="笑死，我家隔壁係魔王城www" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Games</span>
+  </div>
+  
+  <div class="tile-body tile-body-lead">
+    <div class="lead-head">
+      <div class="meta-row">
+        <span class="heat heat-a">熱度 A</span>
+      </div>
+      <h3 class="headline">笑死，我家隔壁係魔王城www</h3>
+      <p class="orig">ワロタ、俺の家のとなり魔王城www ／ Warota, I Live Next to The Demon King&#x27;s Castle LOL</p>
+    </div>
+    <div class="lead-copy lead-copy-b">
+      <div class="lead-col lead-col-1">
+        <p class="why">Quest Board Steam 日本銷售榜 11/13–11/16 連續四朝首位（最新 11/16 07:30 JST）。gamebiz 11/16 含免費榜為有料頭名（總榜第 3）；11/13 稿寫 11/12 發售、村づくりアクション RPG。</p>
+<p class="blurb">家隔籬居然係魔王城——光呢個設定已經夠上短影片。玩法被介紹為村莊建設加動作角色扮演，節奏可探索可經營，適合想週末開檔建立自己據點、又想食奇幻笑位嘅玩家；黑色幽默同誇張鄰居關係係最大賣相，截圖都容易引起共鳴。</p>
+<p class="blurb">呢個星期突然成為日本 PC 區最顯眼嘅新面孔，係因為 Quest Board 十一月十三至十六日朝早集計中，Steam 日本銷售榜由佢連續四朝坐上首位；gamebiz 含免費遊戲嘅國內榜，十六日仍然係有料作品頭名。媒體寫十一月十二日發售，一成優惠亦令猶豫中嘅人更容易入袋，討論由咁怪嘅名，自然轉到隔壁究竟發生緊啲咩。</p>
+      </div>
+      <div class="lead-col lead-col-2">
+        <p class="blurb">鍾意經營同輕動作會很順；想食三年一度槍戰大作嘅人或會覺得格局較小。想感受而家日本 Steam 真正排第一嗰隻，優先開檔兩小時就有話題，獨立作能夠連日頂欄，本身就係今週最大話題。</p>
+        <p class="sources"><a href="https://quest-board.jp/quests/rankings-2026-11-16/" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://quest-board.jp/quests/rankings-2026-11-15/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://quest-board.jp/quests/rankings-2026-11-14/" target="_blank" rel="noopener noreferrer">來源 3</a> · <a href="https://gamebiz.jp/news/435549" target="_blank" rel="noopener noreferrer">來源 4</a> · <a href="https://store.steampowered.com/app/2860490/?l=japanese" target="_blank" rel="noopener noreferrer">來源 5</a></p>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-games-2">
+  <div class="tile-media">
+    <img src="assets/img-12.jpg" alt="勇者小隊全滅了。" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Games</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-a">熱度 A</span>
+    </div>
+    <h3 class="headline">勇者小隊全滅了。</h3>
+    <p class="orig">勇者パーティはぜんめつしました。 ／ Annihilated</p>
+    <p class="why">Quest Board Steam 日本 11/13 第 3、11/14–11/15 第 2、11/16 第 3，四朝都喺付費前三。gamebiz 11/16 含免費榜第 4（有料第 2）。</p>
+<p class="blurb">標題已經把前提講完：勇者小隊全滅之後，故事先至真正開始。獨立作品嘅賣點係「失敗之後點算」，節奏同視角都同典型討伐冒險錯開，適合想週末換走無雙開局、食另一種奇幻語氣嘅玩家，怪趣命名本身亦好易上討論串，截圖同短評都容易傳開。</p>
+<p class="blurb">呢個星期穩佔日本付費榜前段，係因為 Quest Board 十一月十三日朝集計排第三，十四、十五日升上第二，十六日回第三，四朝都無跌出前三；gamebiz 含免費遊戲嘅十六日榜仍係有料第二。連續多日頂欄，說明唔係一日驚奇，而係週末都有人繼續入袋同開檔，討論由標題迷因轉到實際好玩唔好玩，黏性已經超過首發日。</p>
+<p class="blurb">鍾意故事向同非常規開局會很順；想食即時動作反饋嘅人或會想先睇實況再開檔。想追而家日本 Steam 付費區除「隔壁魔王城」以外最穩嘅新面孔，預留一段連續時間開檔，比當十分鐘休閒更有滿足感。</p>
+<p class="sources"><a href="https://quest-board.jp/quests/rankings-2026-11-16/" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://quest-board.jp/quests/rankings-2026-11-15/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://quest-board.jp/quests/rankings-2026-11-14/" target="_blank" rel="noopener noreferrer">來源 3</a> · <a href="https://store.steampowered.com/app/2638080/?l=japanese" target="_blank" rel="noopener noreferrer">來源 4</a></p>
+  </div>
+</article>
+<article class="tile tile-sm" id="feat-games-3">
+  <div class="tile-media">
+    <img src="assets/img-13.jpg" alt="殺戮尖塔 2" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">Games</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-a">熱度 A</span>
+    </div>
+    <h3 class="headline">殺戮尖塔 2</h3>
+    <p class="orig">Slay the Spire 2</p>
+    <p class="why">Quest Board Steam 日本 11/13 第 9，11/14 升至第 3（頁面寫 9→3，↑6），11/15 第 3，11/16 第 2。gamebiz 11/16 含免費榜第 5。連續三日付費前三，最新朝高過『勇者小隊全滅了。』。</p>
+<p class="blurb">爬塔、組牌、每一次失敗都教你下一鋪點改——前作已經令「殺戮尖塔」成為卡牌肉鴿代名詞，續作把呢套上癮循環帶到新一層。節奏可短可長，成功同失敗都適合截圖分享，好啱想週末開一局、再情不自禁再開一局嘅玩家，討論門檻亦低。</p>
+<p class="blurb">呢個星期熱度明顯再拉高，係因為 Quest Board 十一月十三日朝集計仲排第九，十四日已經跳到第三，十五日守住第三，十六日再升上第二，成為最新朝日本 Steam 付費榜上只低於「隔壁魔王城」嘅作品。二成優惠亦令舊粉同觀望中嘅人更容易入袋，討論由「續作值唔值得買」轉到而家邊套牌最好上塔，連續三日都留喺付費前三。</p>
+<p class="blurb">玩過前作會即刻有共同語言；新人建議先接受「輸都係過程」，唔好第一局就要求通關。想週末食可重玩、又有得同人比較構築嘅遊戲，佢而家係日本 PC 區最前嘅卡牌肉鴿，開兩局通常就有話題。</p>
+<p class="sources"><a href="https://quest-board.jp/quests/rankings-2026-11-16/" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://quest-board.jp/quests/rankings-2026-11-15/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://quest-board.jp/quests/rankings-2026-11-14/" target="_blank" rel="noopener noreferrer">來源 3</a> · <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/?l=japanese" target="_blank" rel="noopener noreferrer">來源 4</a></p>
+  </div>
+</article>
+    </div>
+
+    <hr class="section-rule">
+    <p class="sec-label" id="feat-dorama">Featured · 日劇／美劇</p>
+    <div class="grid grid-drama" id="feat-us">
+      
+<article class="tile tile-feature tone-dark" id="feat-dorama-1">
+  <div class="tile-media">
+    <img src="assets/img-14.png" alt="VIVANT 第2季" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">日劇</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-a">熱度 A</span>
+    </div>
+    <h3 class="headline">VIVANT 第2季</h3>
+    <p class="orig">VIVANT（第2シーズン／後期） ／ VIVANT Season 2</p>
+    <p class="why">最終回（11/8）戶視聽率 21.8%、個人 14.8% 仍係系列最高（日刊 11/9）。11/16 日刊以「VIVANTロス」為題，指終後一週討論未散，並預告 11/22 日曜劇場框地上波初放送スピンオフ『VIVANT−THE ORIGIN STORY−』ドラム編；電影 12/4＋IMAX，11/11 解禁 17 人海報。</p>
+<p class="blurb">日本日曜劇場級別嘅國際陰謀娛樂片，第二季已經播完，但話題完全未散。堺雅人帶領嘅別班線喺敵友難分嘅世界打轉，沙漠、情報同人性試煉交疊，節奏偏大場面，適合想食大製作、大卡司嘅觀眾；就算錯過首播，補進度黨呢一週仍然好活躍。</p>
+<p class="blurb">呢個星期仍然特別燙，係因為十一月八日最終回戶視聽率百分之二十一點八、個人百分之十四點八，刷新系列最高嘅標尺仲喺；更關鍵係終後討論無讓位——十一月十六日日刊以「VIVANTロス」為題，寫網上仍然大量有人傾，並預告十一月二十二日日曜劇場框將地上波初放送スピンオフ。十一月十一日電影十七人海報見報，檔期十二月四日全國加上 IMAX，令討論由結局點收科，自然轉到大螢幕同特別篇點接。</p>
+<p class="blurb">未睇過第一季建議至少補重點回顧再入場；鍾意慢熱日常劇嘅人或會覺得資訊密度偏高。想追日本當下仍然最多人傾嘅連戲劇，還是呢套；週末可以重温，再決定要唔要預留戲票或者等二十二日特別篇。呢度唔寫結局情節。</p>
+<p class="sources"><a href="https://www.nikkansports.com/entertainment/news/202611160000290.html" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://www.nikkansports.com/entertainment/news/202611090000154.html" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://www.oricon.co.jp/news/2491951/full/" target="_blank" rel="noopener noreferrer">來源 3</a> · <a href="https://www.tbs.co.jp/VIVANT_tbs/" target="_blank" rel="noopener noreferrer">來源 4</a> · <a href="https://vivant.toho-movie.jp/" target="_blank" rel="noopener noreferrer">來源 5</a></p>
+  </div>
+</article>
+<article class="tile tile-feature tone-dark" id="feat-dorama-2">
+  <div class="tile-media">
+    <img src="assets/img-15.jpg" alt="LOST10" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">日劇</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-b">熱度 B</span>
+    </div>
+    <h3 class="headline">LOST10</h3>
+    <p class="orig">LOST10</p>
+    <p class="why">第 4 話（11/6）戶 7.8%、個人 4.6%（ORICON 11/9；較第 3 話戶 6.3% V 字回升）。4 話平均戶約 7.45%，秋劇約第 6（tvzuki 11/15）。ORICON 報第 4 話後免費配信全話破 300 萬、X 相關詞世界趨勢。第 5 話 11/13 已播，截至 11/16 主要媒體未見戶／個人收視，唔填估計。</p>
+<p class="blurb">横浜流星主演嘅人際懸疑，卡司再加小栗旬等人，劇本陣容令人對「關係網同真相層層剝」有預期。節奏偏一本氣張力，適合想週末食燒腦多過純戀愛嘅觀眾，亦因為係完全原創，討論好多環繞人物動機而唔係原著對照，考察空間大。</p>
+<p class="blurb">呢個星期聲量再被補上實據，係因為十一月六日第四話戶視聽率百分之七點八、個人百分之四點六已經見報，較第三話戶收視百分之六點三呈 V 字回升；四話平均約七點四五，喺今秋民放仍屬中上游而唔係收視王。真正撐住討論嘅仲有配信同社交：報道指第四話後免費配信全話突破三百萬次，相關詞一度佔據世界趨勢。第五話十一月十三日已播，松下洸平由呢一話加入，但截至十六日調查，主要媒體仍未見第五話戶同個人收視，呢度唔估。</p>
+<p class="blurb">完全唔想睇沉重題材嘅人或會覺得氣壓偏高，建議預留專心時段，唔好當背景聲。可以同朋友約好一集一集拆線索，話題黏性會更強。想喺收視王之外再追一套日本當造懸疑，佢仍然係高辨識度選擇。</p>
+<p class="sources"><a href="https://www.oricon.co.jp/news/2491611/full/" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://tvzuki.com/2026autumn-chart/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://dorama9.com/aki2026-rating-osusume/" target="_blank" rel="noopener noreferrer">來源 3</a> · <a href="https://www.sponichi.co.jp/entertainment/news/2026/11/13/articles/20261113s00041000204000c.html" target="_blank" rel="noopener noreferrer">來源 4</a> · <a href="https://www.tbs.co.jp/lost10/" target="_blank" rel="noopener noreferrer">來源 5</a></p>
+  </div>
+</article>
+<article class="tile tile-feature tone-dark" id="feat-us-1">
+  <div class="tile-media">
+    <img src="assets/img-16.jpg" alt="VisionQuest（漫威）" loading="lazy" referrerpolicy="no-referrer">
+    <span class="cat">美劇</span>
+  </div>
+  
+  <div class="tile-body">
+    <div class="meta-row">
+      <span class="heat heat-a">熱度 A</span>
+    </div>
+    <h3 class="headline">VisionQuest（漫威）</h3>
+    <p class="orig">VisionQuest</p>
+    <p class="why">大結局 Forever 11/10 上線。Disney+ 美區劇集榜 11/8–11/12 再連 5 日第 1，11/13–14 退至第 2（The TV Ratings Guide 11/8–14）。Disney 官方 11/13／Variety：首日全球 370 萬 views，系列最高，較第 7 集 +44%。未把較早窗口嘅 Nielsen 當大結局當週主證；未親開 IMDb，唔寫大結局評分。</p>
+<p class="blurb">漫威《WandaVision》宇宙延伸之作，Paul Bettany 再演 Vision，並同 James Spader 版 Ultron 對壘——光呢個卡司組合已經夠英文圈連開討論串。風格偏身份探問同視覺實驗，唔係無腦打打殺殺，適合想一次過看完呢條線、再決定要唔要銜接後續檔期嘅觀眾。呢度唔寫結局情節。</p>
+<p class="blurb">呢個星期熱度由「倒數」轉成「終後仍壓場」，係因為十一月十日大結局上線後，Disney+ 美區劇集榜喺十一月八日至十二日再連五日佔首位；十三、十四日先被實境衍生節目《Secret Lives of Mormon Wives: Orange County》擠到第二，並非整週失守。迪士尼官方同 Variety 十一日十三日稿寫，大結局首日全球三百七十萬次觀看，創系列新高，亦較第七集升百分之四十四。週末榜位回落，但規模仍然夠撐住熱度 A。</p>
+<p class="blurb">未補前作都入場得，不過睇過會覺得情感線更香。厭惡慢熱中段嘅觀眾可以預期節奏唔會全程爆燈，但演技同影像質感係實貨。建議預留連看時段再同朋友對觀後感，氣氛最完整亦最好傾。</p>
+<p class="sources"><a href="https://www.thetvratingsguide.com/2026/11/whats-trending-on-streaming-november-8.html" target="_blank" rel="noopener noreferrer">來源 1</a> · <a href="https://thewaltdisneycompany.com/news/visionquest-finale-series-high/" target="_blank" rel="noopener noreferrer">來源 2</a> · <a href="https://variety.com/2026/tv/news/visionquest-finale-ratings-views-1236947348/" target="_blank" rel="noopener noreferrer">來源 3</a> · <a href="https://www.marvel.com/tv-shows/visionquest/1" target="_blank" rel="noopener noreferrer">來源 4</a></p>
+  </div>
+</article>
+    </div>
+
+    <hr class="section-rule">
+    <section class="method" id="method">
+      <h2>本週方法</h2>
+      <p class="method-p">熱門度按跨平台討論／觀看／配信／銷量／串流榜證據排序，唔捏造未核實精確貼文數或未公開收視。動畫：台巴哈動畫瘋資料日 2026-11-15 秋番近七日增量（https://anime-research.tw/animategamer/report/2026-fall；同站 seasonal-trend 為前端 SPA，今次讀唔到表，故以有快照日嘅季度報表作次佳）＋日 anime-observer 2026.11.15 今期覇権／11/15 當日觀看（箭嘴對 11/8 同曜日）＋Anime Corner Fall 2026 Week 6（2026-11-13 刊登，投票 11/6–11/13）。Week 7 投票期至 11/20，截至 11/16 未見已刊登結果，故唔用。藥屋仍唔入動畫瘋（台灣主戰場偏 Netflix），以日側配信綜合為準。Filmarks 季初期望度今次唔當本週新榜。漫畫：Billboard JAPAN Hot Manga 2026/11/12 公開（集計 11/02–11/08）；公開頁只到第 20，上期部分底欄作品今期精確名次不明，唔補估。分指標只取新聞稿有寫到嘅項目。下一期榜預期約 11/19 先出，本週鎖 11/12。遊戲：Quest Board 11/13–11/16 朝集計之 Steam 日本銷售（實際接近付費榜，11/13–16 Top 10 未見 Apex／AION 2 等免費作）／Switch／App Store；featured 口徑同上週以付費 Steam 日本銷售為主。gamebiz 11/16 榜含免費遊戲，只作對照、唔同 QB 混成一張榜。日劇：最終回視聽率沿用日刊體育 11/9（戶 21.8%、個人 14.8%）；11/16 日刊另有「VIVANTロス」及 11/22 スピンオフ預告。LOST10 第 4 話（11/6）戶 7.8%、個人 4.6% 由 ORICON 11/9 補上。相棒第 4 話、アナログナース第 4 話、救命病棟第 5 話取 MANTAN。截至 11/16 調查，LOST10 第 5 話（11/13）同箱根第 6 話（11/14）主要媒體未見戶／個人收視，唔填估計值。ビデオリサーチ公式週榜 11/16 取頁仍係 11/2–11/8，未換到 11/9–11/15。TVer 名次只來自 MANTAN 側欄（標 11/16 10:00，並註可能與 TVer 畫面不同）。美劇：The TV Ratings Guide 各平台 11/8–11/14 日榜（11/14 刊）；VisionQuest 大結局首日全球觀看取 Disney 官方 11/13 及 Variety 同日稿（370 萬、較第 7 集 +44%）。已打開嘅 THR Nielsen 稿數據週仍為 10/26–11/1，唔當大結局當週主證。未親開 IMDb，唔寫大結局評分。底欄 rank_delta 以上週 2026-11-09 同期底欄名次對照：new＝上期名單未有；up／down＝仍在名單但名次升／跌；keep＝名次不變。</p>
+    </section>
+
+    <div class="bottom-wrap" id="bottom">
+      
+<section class="bottom-box" id="bottom-anime">
+  <h2 class="bottom-h">Anime · 延伸清單</h2>
+  <ul class="bottom-list">
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">學生會也有洞！（生徒会にも穴はある！）</span>
+  </div>
+  <p class="bottom-intro">台巴哈秋番週增繼續榜首，而且增量高過上期；日側覇権仍第二。短篇連擊好適合週末開話題，角色化學係最大賣點。</p>
+<p class="bottom-intro">由最新一集跟住笑就得，截圖分享都容易引起共鳴。黏性通常喺第二、三集上升。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">藥師少女的獨語／藥屋的孤獨 第3季（薬屋のひとりごと 第3期）</span>
+  </div>
+  <p class="bottom-intro">日本配信覇権同當日觀看都繼續第一，分數仍係一分六一。台灣主戰場偏 Netflix，穩定熱度多過一夜爆紅。</p>
+<p class="bottom-intro">週末連看兩集最有滿足感，案件同人物嘴賤都有得拆。有前作底子會更香。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">被放逐的作弊賦予魔術師享受隨心所欲的第二人生（追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。（通稱：チー付与））</span>
+  </div>
+  <p class="bottom-intro">台巴哈週增仍第二，增量明顯高過上期；日側覇権仍第五，當日觀看由第二微跌至第三。未升 A。</p>
+<p class="bottom-intro">開波試兩集就知合唔合，想追異世界熱榜嘅中段好選擇。合味再長追。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">凶亂令嬢倪亞·利斯頓／亂世千金倪亞·利斯頓（凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの武人の華麗なる無双録）</span>
+  </div>
+  <p class="bottom-intro">台巴哈週增仍第三、幾乎持平；日側覇権由第四升至第三，當日觀看仍第五。穩喺前段、慢慢燒。</p>
+<p class="bottom-intro">想換走套路異世界，週末由最新一集感受反差就得。反差建立之後黏性會升。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">黑色五葉草 第2季（ブラッククローバー 2nd Season）</span>
+  </div>
+  <p class="bottom-intro">台巴哈週增同海外週票都由第四跌至第五，仍前五；日配信覇権未入前十，但十一月十四日第七話好評突出。</p>
+<p class="bottom-intro">週末食熱血連擊就揀佢，舊觀眾會更投入人物關係。純新人可先試高潮場。</p>
+</li>
+  </ul>
+</section>      
+<section class="bottom-box" id="bottom-manga">
+  <h2 class="bottom-h">Manga · 延伸清單</h2>
+  <ul class="bottom-list">
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">SPY×FAMILY／間諜家家酒 第18卷（SPY×FAMILY 18）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 新刊登頂，店頭、電商、電子書同社交全指標第一。十一月四日發售，集英社包辦當週前三。</p>
+<p class="bottom-intro">想追本週日本漫畫真正新刊王，週末翻呢卷最直白。舊讀者當例行補給就得。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">膽大黨 第26卷（ダンダダン 26）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 初登場第二；店頭、電子書同社交都第二。靈異同青春跳接強，動畫粉交叉討論令新刊唔易淡。</p>
+<p class="bottom-intro">適合想週末食爆發力嘅人，火力同笑位都有。新人可由早期卷感受節奏。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">坂本日常／SAKAMOTO DAYS 第29卷（SAKAMOTO DAYS 29）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 初登場第三，店頭同社交第三；集英社包辦前三。新聞稿提到二零二七年一月動畫第二期預定。</p>
+<p class="bottom-intro">退休殺手反差笑料好入口，週末當明快動作飯就得。動畫粉可由對應進度切入。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">魔都精兵的奴隸 第22卷（魔都精兵のスレイブ 22）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 初登場第四；新聞稿只明確寫電子書第三，其餘分指標未見，故標 B。異能戰鬥新刊前段。</p>
+<p class="bottom-intro">想喺王牌長青刊之外食更鋒利衝突，呢卷最接近前段。建議先試閱再追。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">殺手寓言 The third secret 第6卷（ザ・ファブル The third secret 6）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 初登場第五，十一月六日發售；新聞稿無分指標，故標 B。成熟向黑色幽默，語氣冷、張力穩。</p>
+<p class="bottom-intro">想換走校園同靈異口味，週末慢慢翻兩章就有氣氛。睇過先前系列會更香。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-down">down</span>
+    <span class="bottom-title">BLUE GIANT MOMENTUM／藍色巨星 MOMENTUM 第9卷（BLUE GIANT MOMENTUM 9）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 由上期第二回落到第六，店頭同社交仍第四。爵士巡演動能仍在，藝術題材少見咁留喺前段。</p>
+<p class="bottom-intro">適合戴耳機慢慢翻，想換走新刊熱潮呢卷就啱。當場音樂會嚟讀最有味。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">喂！蜻蜓 第65卷（オーイ! とんぼ 65）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 初登場第七；新聞稿無分指標。長青高爾夫漫畫新刊，題材喺週榜前段其實少見，基本盤穩。</p>
+<p class="bottom-intro">想週末換走異能同靈異，翻體育長篇就得。唔使趕進度都有場面好傾。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">我內心的糟糕念頭 第14卷（最終）（僕の心のヤバイやつ 14）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 初登場第八；新聞稿寫最終卷，電商第四。十一月六日發售，校園感情長篇收束，舊粉回流明顯。</p>
+<p class="bottom-intro">未追過唔使硬啃最終卷；舊粉可以當週末告別儀式。由早期卷補會更完整。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">昴與彗星 第4卷（昴と彗星 4）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 初登場第九；講談社官方確認十一月六日發售。新聞稿無分指標，屬新刊洗榜中段嘅穩定面孔。</p>
+<p class="bottom-intro">想喺前段王牌之外再翻一本同步新刊，呢卷負擔唔重。週末試兩章就得。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">拉麵赤貓 第16卷（ラーメン赤猫 16）</span>
+  </div>
+  <p class="bottom-intro">Hot Manga 初登場第十；新聞稿無分指標。拉麵店日常加貓，題材治愈，適合想週末換走緊張劇情嘅讀者。</p>
+<p class="bottom-intro">當治癒向零食翻就得，唔使趕進度都有氣氛。火候溫吞正正係賣點。</p>
+</li>
+  </ul>
+</section>      
+<section class="bottom-box" id="bottom-games">
+  <h2 class="bottom-h">Games · 延伸清單</h2>
+  <ul class="bottom-list">
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">笑死，我家隔壁係魔王城www（ワロタ、俺の家のとなり魔王城www）</span>
+  </div>
+  <p class="bottom-intro">十一月十三至十六日朝集計 Steam 日本銷售榜連續四朝首位。十一月十二日發售嘅村莊建設動作角色扮演，獨立作連日頂欄。</p>
+<p class="bottom-intro">想感受而家日本 PC 區頂欄，開檔兩小時就有話題。誇張設定特別易傳。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">勇者小隊全滅了。（勇者パーティはぜんめつしました。）</span>
+  </div>
+  <p class="bottom-intro">四朝都喺 Steam 日本付費前三，十四、十五日仲排第二，十六日第三。標題迷因加持，唔係一日驚奇。</p>
+<p class="bottom-intro">建議預留一段連續時間開檔，感受非常規開局。合味再長玩。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">殺戮尖塔 2（Slay the Spire 2）</span>
+  </div>
+  <p class="bottom-intro">十三日朝仲排第九，十四日跳到第三，十六日再升上第二，連續三日付費前三。卡牌肉鴿續作熱度明顯拉高。</p>
+<p class="bottom-intro">開兩局通常就有話題，舊粉同新人都易入場。輸都係過程，唔好第一局就要求通關。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">勇者鬥惡龍怪獸仙境 4 枯木之國的碧安卡・芙蘿拉（ドラゴンクエストモンスターズ４ 枯れ木の国のビアンカ・フローラ）</span>
+  </div>
+  <p class="bottom-intro">十六日朝 Steam 日本銷售第四，屬預購拉升；報道寫十二月四日發售、十二月二日可提前遊玩。尚未開賣，熱度先標 B。</p>
+<p class="bottom-intro">想追本週預約話題可以先列入願望清單，唔好當成已經開檔嚟傾。發售週再睇實際口碑。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-down">down</span>
+    <span class="bottom-title">決勝時刻：現代戰爭 4（Call of Duty: Modern Warfare 4）</span>
+  </div>
+  <p class="bottom-intro">十五日朝曾返到第四，十六日第八；較上期主欄回落，但仍留喺付費前段。全球開黑討論無斷，約戰門檻仍然低。</p>
+<p class="bottom-intro">想週末約到人一齊打，佢仍然係最易集合嘅選擇之一。新手建議先熟模式再上排位。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-down">down</span>
+    <span class="bottom-title">最終幻想 共鳴／FINAL FANTASY RESONANCE（FINAL FANTASY RESONANCE）</span>
+  </div>
+  <p class="bottom-intro">十五日 Steam 日本第六、十六日第十；Switch 2 下載仍第七至第八，本體已跌出前十。跨店仍在，熱度明顯回落。</p>
+<p class="bottom-intro">系列粉可以繼續打磨；想追最新付費榜就並非首選。建議預留整段時間，唔好當短循環。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-down">down</span>
+    <span class="bottom-title">Potato Please／拜託馬鈴薯（Potato Please）</span>
+  </div>
+  <p class="bottom-intro">十三至十六日朝都留喺 Steam 日本付費前十，十六日第七。輕量怪趣模擬連續多日頂欄附近，截圖討論特別多。</p>
+<p class="bottom-intro">週末當零食開檔就得，奇怪畫面好易分享出去。怪趣賣相令短片特別易傳。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">節奏天國 奇蹟之星／リズム天国 ミラクルスターズ</span>
+  </div>
+  <p class="bottom-intro">十一月十三至十六日 Switch 下載榜連續四朝首位，加上週已經係榜首級。輕量節奏遊戲，家庭同短影片挑戰易傳播。</p>
+<p class="bottom-intro">週末抽半小時按按鈕就有話題，連小朋友都入場得。家庭場合都好容易一齊玩。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">Pokémon GO／精靈寶可夢 GO</span>
+  </div>
+  <p class="bottom-intro">App Store 日本遊戲銷售十五、十六日朝連續首位；報道指受十一月十四至十五日全球野外活動帶動。事件驅動，故標 B。</p>
+<p class="bottom-intro">通勤或者週末出街收活動都得，熱區偏手機玩家。活動日上線討論會再密一輪。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">怪物彈珠（モンスターストライク）</span>
+  </div>
+  <p class="bottom-intro">十六日朝 App Store 日本遊戲銷售升上第三；報道指十一月十五日起首次「無職轉生」合作帶動。單朝事件熱度，故標 B。</p>
+<p class="bottom-intro">想睇手機區最新活動話題，上線收合作就有得傾。熱度未必跨過活動檔期。</p>
+</li>
+  </ul>
+</section>      
+<section class="bottom-box" id="bottom-dorama">
+  <h2 class="bottom-h">日劇 · 延伸清單</h2>
+  <ul class="bottom-list">
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">VIVANT 第2季（VIVANT（第2シーズン／後期））</span>
+  </div>
+  <p class="bottom-intro">最終回戶視聽率百分之二十一點八仍係系列最高；十六日仍有「ロス」專稿，二十二日スピンオフ同十二月四日電影令討論未讓位。</p>
+<p class="bottom-intro">週末重温再決定要唔要預留戲票，話題會繼續燒。呢度唔寫結局情節。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">LOST10（LOST10）</span>
+  </div>
+  <p class="bottom-intro">第四話戶百分之七點八、個人百分之四點六，呈 V 字回升；四話平均約七點四五。第五話已播，截至十六日未見收視，唔估。</p>
+<p class="bottom-intro">建議專心連看，唔好當背景聲，一集一集對筆記。原創懸疑考察空間大。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">相棒 season25（相棒season25）</span>
+  </div>
+  <p class="bottom-intro">四話平均戶約百分之九點五三，暫與類比護士並列第二。十一月十一日第四話戶百分之八點六、個人百分之五點零。</p>
+<p class="bottom-intro">週末當熟悉推理零食追最新一集就得，負擔唔重。長壽程序讓一家人一齊追都得。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">類比護士～數位究竟係咩！？～（アナログナース デジタルってなんなんだよ!?）</span>
+  </div>
+  <p class="bottom-intro">四話平均戶約百分之九點五三，排位由單獨第三升至並列第二。十一月十二日第四話戶百分之八點九、個人百分之四點九。</p>
+<p class="bottom-intro">想食專業題材又唔想太黑暗，呢套節奏剛剛好。職場笑淚夾得入門，週末好入手。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">我們的箱根驛傳（俺たちの箱根駅伝）</span>
+  </div>
+  <p class="bottom-intro">五話平均戶約百分之八點四六，仍列第四。第六話十一月十四日已播，截至十六日未見收視；轉載嘅 TVer 小工具當朝排過第一。</p>
+<p class="bottom-intro">想週末睇完覺得胸口熱，呢套題材最應景亦最好傾。驛傳季節感令話題更好開口。</p>
+</li>
+  </ul>
+</section>      
+<section class="bottom-box" id="bottom-us">
+  <h2 class="bottom-h">美劇 · 延伸清單</h2>
+  <ul class="bottom-list">
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-a">熱度 A</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">VisionQuest（漫威）（VisionQuest）</span>
+  </div>
+  <p class="bottom-intro">大結局十一月十日上線；Disney+ 美區再連五日佔劇集榜首，十三、十四日退至第二。首日全球三百七十萬次觀看，系列新高。</p>
+<p class="bottom-intro">預留連看時段再對觀後感，氣氛最完整。未補前作都入場得，呢度唔寫結局。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-keep">keep</span>
+    <span class="bottom-title">The Gilded Age 第4季（HBO／鍍金年代）</span>
+  </div>
+  <p class="bottom-intro">十一月八至十四日有六日佔 HBO Max 劇集榜首，只週六被打斷，較上期五日更穩。豪華卡司社交鬥爭適合週末煲。</p>
+<p class="bottom-intro">想換走超英節奏，呢套正好可以慢慢睇、慢慢傾。服裝同宴會場面特別好傾。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-new">new</span>
+    <span class="bottom-title">The Rings of Power 第3季（魔戒：力量之戒／Prime Video）</span>
+  </div>
+  <p class="bottom-intro">兩年後回歸。Prime Video 美區劇集榜十一月十二至十四日連續三日第 1，把上期常勝嘅終極名單打下榜首。</p>
+<p class="bottom-intro">想週末投入大型奇幻世界觀，呢套係本週新熱點。建議預留整段時間，唔好當單集零食。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-down">down</span>
+    <span class="bottom-title">The Terminal List（終極名單／Prime Video）</span>
+  </div>
+  <p class="bottom-intro">十一月八至十一日仍佔 Prime 劇集榜首，十二日起退至第二。熱度仍在，但已讓出平台第一給力量之戒。</p>
+<p class="bottom-intro">想食動作緊張感可以繼續追；想追最新平台熱點就已唔係獨大。節奏偏硬派。</p>
+</li>
+<li class="bottom-item">
+  <div class="bottom-head">
+    <span class="heat heat-b">熱度 B</span>
+    <span class="delta delta-down">down</span>
+    <span class="bottom-title">Stick（Stick／Apple TV）</span>
+  </div>
+  <p class="bottom-intro">十一月八至十三日共六日佔 Apple TV 劇集榜首，只十四日被打斷，較上期更長。名單名次因新作插入而下調，平台熱度其實偏強。</p>
+<p class="bottom-intro">想換走超級英雄同史詩奇幻，呢套節奏較生活化，週末煲得順。</p>
+</li>
+  </ul>
+</section>
+    </div>
+  </main>
+  <footer class="site">
+    <p>圖片以本頁 assets 相對路徑載入；報告週期以 Asia/Hong_Kong 為準。</p>
+  </footer>
+</body>
+</html>
